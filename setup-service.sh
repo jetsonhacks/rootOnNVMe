@@ -1,7 +1,7 @@
 #!/bin/sh
 # Setup the service to set the rootfs to point to the SSD
-sudo cp setssdroot.service /etc/systemd/system
-sudo cp setssdroot.sh /sbin
+sudo cp data/setssdroot.service /etc/systemd/system
+sudo cp data/setssdroot.sh /sbin
 sudo chmod 777 /sbin/setssdroot.sh
 systemctl daemon-reload
 sudo systemctl enable setssdroot.service

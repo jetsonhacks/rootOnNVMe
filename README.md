@@ -17,7 +17,7 @@ Then, setup the service. This will copy the .service file to the correct locatio
 $ ./setup-service.sh
 ```
 
-Note that setssdroot.sh is the script for installation, and should not be run individually. After setting up the service, reboot for the changes to take effect.
+After setting up the service, reboot for the changes to take effect.
 
 ### Boot Notes
 These script changes the rootfs to the SSD after the kernel image is loaded from the eMMC/SD card. For the Xavier NX, you will still need to have the SD card installed for booting. As of this writing, the default configuration of the Jetson NX does not allow direct booting from the NVMe.
