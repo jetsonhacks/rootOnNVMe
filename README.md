@@ -3,7 +3,7 @@ Switch the rootfs to a NVMe SSD on the Jetson Xavier NX and Jetson AGX Xavier
 
 These scripts install a service which runs at startup to point the rootfs to a SSD installed on /dev/nvme0 (the M.2 Key M slot).
 
-This is taken from the NVIDIAS Jetson AGX Xavier forum https://forums.developer.nvidia.com/t/how-to-boot-from-nvme-ssd/65147/22, written by user crazy_yorik (https://forums.developer.nvidia.com/u/crazy_yorick). Thank you crazy_yorik!
+This is taken from the NVIDIA Jetson AGX Xavier forum https://forums.developer.nvidia.com/t/how-to-boot-from-nvme-ssd/65147/22, written by user crazy_yorik (https://forums.developer.nvidia.com/u/crazy_yorick). Thank you crazy_yorik!
 
 This procedure should be done on a fresh install of the SD card using JetPack 4.3+. Install the SSD into the M.2 Key M slot of the Jetson, and format it gpt, ext4, and setup a partition (p1). The AGX Xavier uses eMMC, the Xavier NX uses a SD card in the boot sequence.
 
