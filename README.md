@@ -7,14 +7,14 @@ This is taken from the NVIDIA Jetson AGX Xavier forum https://forums.developer.n
 
 This procedure should be done on a fresh install of the SD card using JetPack 4.3+. Install the SSD into the M.2 Key M slot of the Jetson, and format it gpt, ext4, and setup a partition (p1). The AGX Xavier uses eMMC, the Xavier NX uses a SD card in the boot sequence.
 
-Next, copy the rootfs of the eMMC/SD card to the SSD (nvme/usb)
+Next, copy the rootfs of the eMMC/SD card to the device (nvme/usb)
 ```
 $ ./copy-rootfs-ssd.sh <usb|nvme>
 ```
 
-Then, setup the service. This will copy the .service file to the correct location, and install a startup script to set the rootfs to the SSD.
+Then, setup the service. This will copy the .service file to the correct location, and install a startup script to set the rootfs to the device.
 ```
-$ ./setup-service.sh
+$ ./setup-service.sh <usb|nvme>
 ```
 
 After setting up the service, reboot for the changes to take effect.
