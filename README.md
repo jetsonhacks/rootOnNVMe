@@ -27,6 +27,11 @@ Once this service is installed, the rootfs will be on the SSD. If you upgrade to
 
 Typically this involves copying the /boot* directory and /lib/modules/\<kernel name\>/ from the SSD to the SD card. If they are different, then modules load will be 'tainted', that is, the modules version will not match the kernel version.
 
+## Notes
+* Initial Release, June 2023
+* JetPack 5.1 DP
+* L4T 35.2.1
+* Tested on Jetson Xavier Orin
 
 ## Notes
 * Initial Release, May 2020
